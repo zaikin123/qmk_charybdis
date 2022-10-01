@@ -4,7 +4,7 @@
 #define MATRIX_ROWS 10 // Rows are doubled-up.
 #define MATRIX_COLS 6
 #define MATRIX_ROW_PINS \
-    { A3, A2, A1, A0, A10 }
+    { F4, F5, F6, F7, B6 }
 #define MATRIX_COL_PINS \
     { D4, C6, D7, E6, B4 , B5 }
 
