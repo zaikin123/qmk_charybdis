@@ -32,4 +32,4 @@
 
 /* PMW3360 settings. */
 #undef PMW33XX_CS_PIN
-#define PMW33XX_CS_PIN D1
+#define PMW33XX_CS_PIN D2
