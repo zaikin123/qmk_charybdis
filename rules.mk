@@ -1,3 +1,5 @@
 SRC += source.c
-BOOTMAGIC_ENABLE = yes
+# BOOTMAGIC_ENABLE = yes
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
 LTO_ENABLE = yes
