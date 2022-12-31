@@ -18,6 +18,8 @@
 /* Trackball angle adjustment. */
 #define ROTATIONAL_TRANSFORM_ANGLE -25
 
+#define POINTING_DEVICE_DEBUG
+#define CHARYBDIS_CONFIG_SYNC
 
 
 /* Handedness. */
