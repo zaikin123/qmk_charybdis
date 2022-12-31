@@ -22,6 +22,7 @@
 
 /* Handedness. */
 #define MASTER_RIGHT
+#define SPLIT_USB_DETECT
 
 /* serial.c configuration (for split keyboard). */
 #undef SOFT_SERIAL_PIN
