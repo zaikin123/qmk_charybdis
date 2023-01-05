@@ -40,5 +40,5 @@
 
 
 #undef PMW33XX_CS_PIN
-#define PMW33XX_CS_PIN D3
+#define PMW33XX_CS_PIN B6
 #define PMW3360_CPI 400
