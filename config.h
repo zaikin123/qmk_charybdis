@@ -18,8 +18,6 @@
 /* Trackball angle adjustment. */
 #define ROTATIONAL_TRANSFORM_ANGLE -25
 
-#define POINTING_DEVICE_DEBUG
-#define CHARYBDIS_CONFIG_SYNC
 
 
 /* Handedness. */
@@ -34,5 +32,13 @@
 /* #define RGB_DI_PIN D3 */
 
 /* PMW3360 settings. */
+#define POINTING_DEVICE_DEBUG
+#define CHARYBDIS_CONFIG_SYNC
+
+#define SPLIT_POINTING_ENABLE
+#define POINTING_DEVICE_RIGHT
+
+
 #undef PMW33XX_CS_PIN
 #define PMW33XX_CS_PIN D3
+#define PMW3360_CPI 400
