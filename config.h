@@ -46,3 +46,14 @@
 #define BOOTMAGIC_LITE_ROW 5
 #define BOOTMAGIC_LITE_COLUMN 0
 
+#ifdef VIA_ENABLE
+/* VIA configuration. */
+#    define DYNAMIC_KEYMAP_LAYER_COUNT 4
+#endif // VIA_ENABLE
+
+/* Disable unused features. */
+#define NO_ACTION_ONESHOT
+
+/* Charybdis-specific features. */
+
+#define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
