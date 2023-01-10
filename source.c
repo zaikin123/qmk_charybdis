@@ -7,7 +7,7 @@ enum charybdis_keymap_layers {
     LAYER_BASE = 0,
 //    LAYER_LOWER,
 //    LAYER_RAISE,
-    LAYER_POINTER,
+    LAYER_POINTER = 1,
 };
 
 /** \brief Automatically enable sniping-mode on the pointer layer. */
