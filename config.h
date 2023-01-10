@@ -57,3 +57,6 @@
 /* Charybdis-specific features. */
 
 #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
+#if defined(SPLIT_POINTING_ENABLE)
+#    include "auto_pointer_layer.h"
+#endif
