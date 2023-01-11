@@ -47,7 +47,7 @@
 #define BOOTMAGIC_LITE_COLUMN 0
 
 
-#define LAYER_POINTER 1
+
 
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
