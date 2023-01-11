@@ -46,11 +46,6 @@
 #define BOOTMAGIC_LITE_ROW 5
 #define BOOTMAGIC_LITE_COLUMN 0
 
-enum charybdis_keymap_layers {
-    LAYER_BASE,
-    LAYER_POINTER,
-};
-
 #define LAYER_BASE 0
 #define LAYER_POINTER 1
 
