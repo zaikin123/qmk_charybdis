@@ -1,7 +1,5 @@
-enum charybdis_keymap_layers {
-    LAYER_BASE = 0,
-    LAYER_POINTER = 1,
-};
+#define LAYER_BASE 0
+#define LAYER_POINTER 1
 
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
