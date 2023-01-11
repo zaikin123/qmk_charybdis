@@ -1,5 +1,4 @@
-SRC +=  source.c \
-        mralex07.c
+SRC +=  source.c
         
 # MCU name
 MCU = atmega32u4
