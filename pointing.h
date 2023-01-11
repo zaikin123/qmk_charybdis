@@ -22,14 +22,4 @@ enum charybdis_keymap_layers {
 #define CHARYBDIS_DRAGSCROLL_REVERSE_Y
 
 
-enum {
-  TD_SLSH_PL = 0
-};
-qk_tap_dance_action_t tap_dance_actions[] = {
-  [TD_SLSH_PL] = ACTION_TAP_DANCE_DOUBLE(KC_SLSH, TG(1))
-};
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT(
-    TD(TD_SLSH_PL) \
-  ),
-};
+
