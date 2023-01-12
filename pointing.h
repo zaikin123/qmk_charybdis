@@ -10,6 +10,8 @@ enum charybdis_keymap_layers {
 #    define SNIPING KC_NO
 #endif // !POINTING_DEVICE_ENABLE
 
+#define PT_SLSH LT(TG(3), KC_SLSH)
+
 /* Disable unused features. */
 #define NO_ACTION_ONESHOT
 
