@@ -1,6 +1,8 @@
 #include QMK_KEYBOARD_H
 #include "pointing.h"
 
+#define PT_SLSH LT(TG(3), KC_SLSH)
+
 #ifdef CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #    include "timer.h"
 #endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
