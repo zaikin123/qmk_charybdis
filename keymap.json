@@ -53,7 +53,7 @@
       "KC_M",
       "KC_COMM",
       "KC_DOT",
-      "ANY(PT_SLSH)",
+      "PT_SLSH",
       "KC_LALT",
       "KC_LGUI",
       "KC_SPC",
