@@ -3,7 +3,7 @@
   "notes": "",
   "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
   "keyboard": "bastardkb/charybdis/4x6/v2/elitec",
-  "keymap": "mralex07",
+  "keymap": "bastardkb_charybdis_4x6_v2_elitec_layout_charybdis_4x6_mine",
   "layout": "LAYOUT_charybdis_4x6",
   "layers": [
     [
@@ -56,9 +56,9 @@
       "KC_SLSH",
       "KC_RBRC",
       "KC_LGUI",
-      "KC_SPC",
-      "MO(2)",
-      "MO(1)",
+      "KC_ENT",
+      "LT(2,KC_SPC)",
+      "LT(1,KC_SPC)",
       "KC_ENT",
       "KC_LALT",
       "KC_BSPC",
@@ -235,7 +235,7 @@
       "KC_NO",
       "KC_BTN2",
       "KC_NO",
-      "KC_NO",
+      "ANY(DRGSCRL)",
       "KC_BTN1"
     ]
   ],
