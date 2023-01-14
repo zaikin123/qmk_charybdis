@@ -1,6 +1,7 @@
 SRC += source.c
 # MCU name
 MCU = STM32F411
+BOARD = STEMCELL
 
 # Bootloader selection
 BOOTLOADER = tinyuf2
