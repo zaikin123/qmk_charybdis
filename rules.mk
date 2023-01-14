@@ -1,13 +1,13 @@
 SRC += source.c
 # MCU name
-MCU = STM32F411
+# MCU = STM32F411
 # BOARD = STEMCELL
 
 # Bootloader selection
 BOOTLOADER = tinyuf2
-CONVERT_TO = stemcell
-STMC=yes 
-STMC_IS=yes
+# CONVERT_TO = stemcell
+# STMC=yes 
+# STMC_IS=yes
 
 
 
@@ -31,5 +31,5 @@ POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
 MOUSE_SHARED_EP = no # Unify multiple HID interfaces into a single Endpoint
 KEYBOARD_SHARED_EP = yes
 
-SERIAL_DRIVER = usart
+# SERIAL_DRIVER = usart
 DEBOUNCE_TYPE = asym_eager_defer_pk
