@@ -1,7 +1,7 @@
 SRC += source.c
 # MCU name
-MCU = STM32F411
-BOARD = STEMCELL
+# MCU = STM32F411
+# BOARD = STEMCELL
 
 # Bootloader selection
 BOOTLOADER = stm32-dfu
