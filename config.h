@@ -1,3 +1,6 @@
+/* Handedness. */
+#define MASTER_RIGHT
+
 #define POINTING_DEVICE_ROTATION_90
 #define POINTING_DEVICE_INVERT_X
 #define POINTING_DEVICE_INVERT_Y
