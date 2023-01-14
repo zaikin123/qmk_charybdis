@@ -4,7 +4,7 @@ MCU = STM32F411
 BOARD = STEMCELL
 
 # Bootloader selection
-BOOTLOADER = tinyuf2
+BOOTLOADER = stm32-dfu
 CONVERT_TO = stemcell
 STMC=yes 
 STMC_IS=yes
