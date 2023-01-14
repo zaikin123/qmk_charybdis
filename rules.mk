@@ -33,3 +33,6 @@ LAYOUTS = split_3x5_3
 
 POINTING_DEVICE_ENABLE = yes
 POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
+
+SERIAL_DRIVER = usart
+DEBOUNCE_TYPE = asym_eager_defer_pk
