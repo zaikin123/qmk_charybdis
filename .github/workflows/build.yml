@@ -12,7 +12,8 @@ jobs:
         file:
         - keymap.json
 # End of json file list
-
+        conv: [stemcell]
+        split: [left, right]
     steps:
 
     - name: Checkout QMK
@@ -25,15 +26,27 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: users/${{ github.actor }}
-
+    
+    - name: Setup variables
+      env:
+        conv_suffix: $([ ${{ matrix.conv }} ] && printf "_${{ matrix.conv }}")
+        split_suffix: $([ ${{ matrix.split }} ] && printf "_${{ matrix.split }}")
+      run: |
+        echo "build_args=-e CONVERT_TO=${{ matrix.conv }} -e SPLIT=${{ matrix.split }}" >> $GITHUB_ENV
+        echo "file_suffix=${{ env.conv_suffix }}${{ env.split_suffix }}" >> $GITHUB_ENV
+        echo "archive_name=${{ matrix.keyboard }}${{ env.conv_suffix }}" >> $GITHUB_ENV
+    
+      
     - name: Build firmware
-      run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
+      working-directory: users/${{ github.actor }}
+      run: qmk -v compile -j 3 ${{ env.build_args }} ${{ matrix.file }}
 
     - name: Archive firmware
       uses: actions/upload-artifact@v3
       continue-on-error: true
       with:
-        name: firmware
+        retention-days: 30
+        name: ${{ env.archive_name }}
         path: |
           *.hex
           *.bin
