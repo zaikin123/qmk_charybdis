@@ -3,7 +3,7 @@ SRC += source.c
 MCU = STM32F411
 
 # Bootloader selection
-BOOTLOADER = stm32-dfu
+BOOTLOADER = stm-dfu
 CONVERT_TO = stemcell
 STMC=yes 
 STMC_IS=yes
