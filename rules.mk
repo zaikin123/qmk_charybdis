@@ -4,7 +4,7 @@ SRC += source.c
 # BOARD = STEMCELL
 
 # Bootloader selection
-BOOTLOADER = stm32-dfu
+BOOTLOADER = tinyuf2
 CONVERT_TO = stemcell
 STMC=yes 
 STMC_IS=yes
