@@ -4,8 +4,8 @@ SRC += source.c
 # BOARD = STEMCELL
 
 # Bootloader selection
-BOOTLOADER = tinyuf2
-CONVERT_TO = stemcell
+BOOTLOADER=tinyuf2
+CONVERT_TO=stemcell
 
 
 
