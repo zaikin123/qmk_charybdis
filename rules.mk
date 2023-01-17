@@ -6,8 +6,7 @@ SRC += source.c
 # Bootloader selection
 BOOTLOADER = tinyuf2
 CONVERT_TO = stemcell
-# STMC=yes 
-STMC_IS=yes
+
 
 
 
