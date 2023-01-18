@@ -1,6 +1,7 @@
 /* Handedness. */
+#define EE_HANDS
 #define MASTER_RIGHT
-#define SPLIT_USB_DETECT
+// #define SPLIT_USB_DETECT
 #define SPLIT_POINTING_ENABLE
 #define POINTING_DEVICE_RIGHT
 
