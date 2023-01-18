@@ -13,10 +13,10 @@
 #define CIRQUE_PINNACLE_ADDR 0x2A
 
 #define I2C_DRIVER I2CD1
-/* #define I2C1_SDA_PIN D2
-#define I2C1_SDA_PAL_MODE 4
-#define I2C1_SCL_PIN D3
-#define I2C1_SCL_PAL_MODE 4
+#define I2C1_SDA_PIN D1
+// #define I2C1_SDA_PAL_MODE 4
+#define I2C1_SCL_PIN D0
+// #define I2C1_SCL_PAL_MODE 4
 
 /* CRC. */
 #define CRC8_USE_TABLE
