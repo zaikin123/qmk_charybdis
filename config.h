@@ -19,6 +19,10 @@
 #define I2C1_SCL_PIN D0
 // #define I2C1_SCL_PAL_MODE 4
 
+#define USE_SERIAL
+#define SERIAL_USART_DRIVER SD2
+#define SOFT_SERIAL_PIN D2
+
 /* CRC. 
 #define CRC8_USE_TABLE
 #define CRC8_OPTIMIZE_SPEED */
