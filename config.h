@@ -18,6 +18,6 @@
 #define I2C1_SCL_PIN D0
 // #define I2C1_SCL_PAL_MODE 4
 
-/* CRC. */
+/* CRC. 
 #define CRC8_USE_TABLE
 #define CRC8_OPTIMIZE_SPEED */
