@@ -1,7 +1,7 @@
 SRC +=  source.c
 
 # MCU name
-MCU = STM32F411
+# MCU = STM32F411
 
 # Bootloader selection
 BOOTLOADER = stm32-dfu
@@ -24,7 +24,7 @@ AUDIO_SUPPORTED = no        # Audio is not supported
 RGB_MATRIX_SUPPORTED = no  # RGB matrix is supported and enabled by default
 RGBLIGHT_SUPPORTED = no    # RGB underglow is supported, but not enabled by default
 RGB_MATRIX_ENABLE = no     # Enable keyboard RGB matrix functionality
-#RGB_MATRIX_DRIVER = WS2812
+# RGB_MATRIX_DRIVER = WS2812
 
 SPLIT_KEYBOARD = yes
 
