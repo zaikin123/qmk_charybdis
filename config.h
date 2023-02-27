@@ -5,7 +5,7 @@
     { F6, F5, B6, D7, E6, B4 }
 #undef MATRIX_ROW_PINS
 #define MATRIX_ROW_PINS \
-    { B3, F7, C6, D4, B5 }
+    { D0, F7, C6, D4, B5 }
 
 
 /* Handedness. */
