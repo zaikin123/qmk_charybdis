@@ -12,3 +12,5 @@
 #undef MASTER_RIGHT
 #define MASTER_LEFT
 #define SPLIT_USB_DETECT
+
+#define SKIP_VERSION
