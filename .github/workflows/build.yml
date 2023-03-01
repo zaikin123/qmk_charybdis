@@ -15,7 +15,10 @@ jobs:
 
     steps:
 
-    - name: Checkout QMK
+   - name: qmk clean
+      run: qmk clean -a
+
+   - name: Checkout QMK
       uses: actions/checkout@v3
       with:
         repository: qmk/qmk_firmware
