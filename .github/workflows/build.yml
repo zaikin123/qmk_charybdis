@@ -15,9 +15,6 @@ jobs:
 
     steps:
 
-    - name: qmk clean
-      run: qmk clean
-
     - name: Checkout QMK
       uses: actions/checkout@v3
       with:
@@ -28,6 +25,9 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: users/${{ github.actor }}
+    
+    - name: qmk clean
+      run: qmk clean
 
     - name: Build firmware
       run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
