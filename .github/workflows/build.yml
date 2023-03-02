@@ -16,7 +16,7 @@ jobs:
     steps:
 
     - name: qmk clean
-      run: qmk clean -a
+      run: qmk clean
 
     - name: Checkout QMK
       uses: actions/checkout@v3
