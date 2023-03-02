@@ -29,7 +29,16 @@ jobs:
       with:
         path: users/${{ github.actor }}
         persist-credentials: false
-    
+ 
+    - name: qmk clean
+      run: qmk clean
+
+    - name: git config
+      run: git config --global --add safe.directory /__w/qmk_keymap_5x6/qmk_keymap_5x6
+      
+    - name: make git-submodule
+      run: make git-submodule
+ 
     - name: Setup variables
       env:
         conv_suffix: $([ ${{ matrix.conv }} ] && printf "_${{ matrix.conv }}")
@@ -39,6 +48,7 @@ jobs:
         echo "file_suffix=${{ env.conv_suffix }}${{ env.split_suffix }}" >> $GITHUB_ENV
         echo "archive_name=${{ matrix.keyboard }}${{ env.conv_suffix }}" >> $GITHUB_ENV
   
+
       
     - name: Build firmware
       working-directory: users/${{ github.actor }}
