@@ -25,9 +25,6 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: users/${{ github.actor }}
-    
-    - name: qmk clean
-      run: qmk clean
 
     - name: Build firmware
       run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
@@ -36,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v3
       continue-on-error: true
       with:
-        name: firmware
+        name: ${{ matrix.file }}_${{ github.actor }}
         path: |
           *.hex
           *.bin
