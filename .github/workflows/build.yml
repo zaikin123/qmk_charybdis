@@ -26,6 +26,12 @@ jobs:
       with:
         path: users/${{ github.actor }}
 
+    - name: qmk clean
+      run: qmk clean
+
+    - name: make git-submodule
+      run: make git-submodule
+
     - name: Build firmware
       run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
 
