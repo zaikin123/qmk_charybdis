@@ -26,6 +26,15 @@ jobs:
       with:
         path: users/${{ github.actor }}
 
+    - name: qmk clean
+      run: qmk clean
+
+    - name: git config
+      run: git config --global --add safe.directory /__w/qmk_keymap_5x6/qmk_keymap_5x6
+      
+    - name: make git-submodule
+      run: make git-submodule
+
     - name: Build firmware
       run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
 
@@ -33,7 +42,7 @@ jobs:
       uses: actions/upload-artifact@v3
       continue-on-error: true
       with:
-        name: firmware
+        name: ${{ matrix.file }}_${{ github.actor }}
         path: |
           *.hex
           *.bin
