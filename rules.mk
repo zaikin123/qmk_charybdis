@@ -21,9 +21,9 @@ COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-AUDIO_ENABLE = yes           # Audio output
+AUDIO_ENABLE = no           # Audio output
 
-AUDIO_SUPPORTED = yes        # Audio is not supported
+AUDIO_SUPPORTED = no        # Audio is not supported
 RGB_MATRIX_SUPPORTED = no  # RGB matrix is supported and enabled by default
 RGBLIGHT_SUPPORTED = no    # RGB underglow is supported, but not enabled by default
 RGB_MATRIX_ENABLE = no     # Enable keyboard RGB matrix functionality
