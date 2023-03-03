@@ -1,7 +1,7 @@
 SRC +=  source.c
         
 # MCU name
-MCU = RP2040
+# MCU = RP2040
 
 # Bootloader selection
 BOOTLOADER = rp2040
