@@ -12,8 +12,8 @@ jobs:
         file:
         - keymap.json
 # End of json file list
-        keyboard: [dactyl_4x6]
-        conv: [stemcell]
+        keyboard: [a_dux]
+        conv: [splinky]
         split: [left, right]
     steps:
 
