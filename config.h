@@ -1,3 +1,5 @@
+#undef PRODUCT
+#define PRODUCT "a_dux"
 #undef MATRIX_ROW_PINS
 #undef MATRIX_COL_PINS
 #define DIRECT_PINS { { GP29, GP23, GP26, GP1,  GP5}, { GP28, GP20, GP27, GP3, GP6 } , { GP21, GP22, GP0, GP4, GP7 } , { GP9, GP8 }}
