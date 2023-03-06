@@ -2,9 +2,26 @@
 #define PRODUCT "a_dux"
 #undef MATRIX_ROW_PINS
 #undef MATRIX_COL_PINS
-#define DIRECT_PINS { { GP5, GP1, GP26, GP23,  GP29}, { GP6, GP3, GP27, GP20, GP28 } , { GP7, GP4, GP0, GP22, GP21 } , { GP8, null, GP9, null, null }}
+#define DIRECT_PINS { { GP5, GP1, GP26, GP23,  GP29}, { GP6, GP3, GP27, GP20, GP28 } , { GP7, GP4, GP0, GP22, GP21 } , { GP8, GP9 }}
 // #define DIRECT_PINS { { GP29, GP23, GP26, GP1,  GP5}, { GP28, GP20, GP27, GP3, GP6 } , { GP21, GP22, GP0, GP4, GP7 } , { GP9, GP8 }}
 // #define DIRECT_PINS_RIGHT { { GP5, GP1, GP26, GP23,  GP29}, { GP6, GP3, GP27, GP20, GP28 } , { GP7, GP4, GP0, GP22, GP21 } , { GP8, GP9 }}
+#undef LAYOUT_split_3x5_2
+#define LAYOUT_split_3x5_2(                             \
+  k00, k01, k02, k03, k04,     k44, k43, k42, k41, k40, \
+  k10, k11, k12, k13, k14,     k54, k53, k52, k51, k50, \
+  k20, k21, k22, k23, k24,     k64, k63, k62, k61, k60, \
+                 k30, k31,     k71, k70                 \
+)                                                       \
+{                                                       \
+  {   k00,   k01,   k02,   k03,   k04 },                \
+  {   k10,   k11,   k12,   k13,   k14 },                \
+  {   k20,   k21,   k22,   k23,   k24 },                \
+  {   k30, k31,   KC_NO, KC_NO, KC_NO },                \
+  {   k40,   k41,   k42,   k43,   k44 },                \
+  {   k50,   k51,   k52,   k53,   k54 },                \
+  {   k60,   k61,   k62,   k63,   k64 },                \
+  {   k70, k71,   KC_NO, KC_NO, KC_NO },                \
+}
 
 #undef SOFT_SERIAL_PIN
 #define SOFT_SERIAL_PIN GP2
