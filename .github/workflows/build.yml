@@ -57,7 +57,7 @@ jobs:
     - name: Rename uf2
       if: ${{ matrix.conv != '' }}
       continue-on-error: true
-      run: for file in *.uf2; do mv -v $file ${file%.*}${{ env.file_suffix }}.uf2; done
+      run: for file in *.uf2; do mv -v $file ${{ matrix.keyboard }}${{ env.file_suffix }}.uf2; done
       
     - name: Archive firmware
       uses: actions/upload-artifact@v3
