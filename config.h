@@ -2,7 +2,7 @@
 #define PRODUCT "a_dux"
 #undef MATRIX_ROW_PINS
 #undef MATRIX_COL_PINS
-#define DIRECT_PINS { { GP5, GP1, GP26, GP23,  GP29}, { GP6, GP3, GP27, GP20, GP28 } , { GP7, GP4, GP0, GP22, GP21 } , { GP8, GP9 }}
+#define DIRECT_PINS { { GP5, GP1, GP26, GP23,  GP29}, { GP6, GP3, GP27, GP20, GP28 } , { GP7, GP4, GP0, GP22, GP21 } , { GP8, , GP9, , }}
 // #define DIRECT_PINS { { GP29, GP23, GP26, GP1,  GP5}, { GP28, GP20, GP27, GP3, GP6 } , { GP21, GP22, GP0, GP4, GP7 } , { GP9, GP8 }}
 // #define DIRECT_PINS_RIGHT { { GP5, GP1, GP26, GP23,  GP29}, { GP6, GP3, GP27, GP20, GP28 } , { GP7, GP4, GP0, GP22, GP21 } , { GP8, GP9 }}
 
