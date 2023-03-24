@@ -1,11 +1,8 @@
 SRC +=  source.c
 
-# MCU name
-# MCU = STM32F411
-
-# Bootloader selection
-BOOTLOADER = tinyuf2
-CONVERT_TO = stemcell
+# RP2040-specific options
+ALLOW_WARNINGS = yes
+PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
 
 # Build Options
 #   change yes to no to disable
@@ -33,7 +30,4 @@ POINTING_DEVICE_DRIVER = pmw3360
 MOUSE_SHARED_EP = no # Unify multiple HID interfaces into a single Endpoint
 KEYBOARD_SHARED_EP = yes
 
-SERIAL_DRIVER = usart
-WS2812_DRIVER = pwm
-
-DEBOUNCE_TYPE = asym_eager_defer_pk
+SERIAL_DRIVER = vendor
