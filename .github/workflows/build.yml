@@ -14,7 +14,6 @@ jobs:
 # End of json file list
         keyboard: [dactyl_4x6]
         conv: [splinky]
-        split: [left, right]
     steps:
 
     - name: Checkout QMK
