@@ -46,8 +46,6 @@ jobs:
         echo "file_suffix=${{ env.conv_suffix }}" >> $GITHUB_ENV
         echo "archive_name=${{ matrix.keyboard }}${{ env.conv_suffix }}" >> $GITHUB_ENV
   
-
-      
     - name: Build firmware
       working-directory: users/${{ github.actor }}
       run: qmk -v compile -j 3 ${{ matrix.file }}
