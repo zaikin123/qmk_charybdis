@@ -1,0 +1,11 @@
+{
+    "keyboard_name": "DM 5x6",
+    "usb": {
+        "device_version": "1.0.0"
+    },
+    "split": {
+        "soft_serial_pin": "GP3"
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040"
+}
