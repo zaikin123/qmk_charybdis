@@ -2,7 +2,8 @@ SRC += source.c
 # RP2040-specific options
 ALLOW_WARNINGS = yes
 PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
-BOOTLOADER = tinyuf2
+# BOOTLOADER = tinyuf2
+CONVERT_TO=kb2040
 
 # Build Options
 #   change yes to no to disable
