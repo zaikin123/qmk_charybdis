@@ -3,7 +3,7 @@
 
 // Tap Dance keycodes
 enum td_keycodes {
-    TD_LSFT_LBRC_SPC = 0,
+    TD_LSFT_LBRC_SPC = SAFE_RANGE,
     TD_LT1_RBRC_ENT,
     TD_RBRC_ENT,
     TD_LBRC_SPC,
@@ -117,7 +117,7 @@ void lt1rbrcent_reset(tap_dance_state_t *state, void *user_data) {
 // Define `ACTION_TAP_DANCE_FN_ADVANCED()` for each tapdance keycode, passing in `finished` and `reset` functions
 tap_dance_action_t tap_dance_actions[] = {
     [TD_LSFT_LBRC_SPC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, sftlbrcspc_finished, sftlbrcspc_reset),
-    [TD_LT1_RBRC_ENT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, lt1rbrcent_finished, lt1rbrcent_reset)
+    [TD_LT1_RBRC_ENT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, lt1rbrcent_finished, lt1rbrcent_reset),
 };
 
 // Combos 
