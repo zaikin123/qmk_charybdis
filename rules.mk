@@ -27,3 +27,5 @@ SPLIT_KEYBOARD = yes
 
 # RP2040-specific options
 PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
+
+TAP_DANCE_ENABLE = yes
