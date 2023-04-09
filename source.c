@@ -16,19 +16,7 @@ tap_dance_action_t tap_dance_actions[] = {
 
 
 
-// Create a global instance of the tapdance state type
-static td_state_t td_state;
 
-// Declare your tapdance functions:
-
-// Function to determine the current tapdance state
-td_state_t cur_dance(tap_dance_state_t *state);
-
-// `finished` and `reset` functions for each tapdance keycode
-void sftlbrcspc_finished(tap_dance_state_t *state, void *user_data);
-void sftlbrcspc_reset(tap_dance_state_t *state, void *user_data);
-void lt1rbrcent_finished(tap_dance_state_t *state, void *user_data);
-void lt1rbrcent_reset(tap_dance_state_t *state, void *user_data);
 
 // Determine the tapdance state to return
 td_state_t cur_dance(tap_dance_state_t *state) {
