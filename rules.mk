@@ -29,3 +29,4 @@ SPLIT_KEYBOARD = yes
 PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
 
 TAP_DANCE_ENABLE = yes
+COMBO_ENABLE = yes
