@@ -18,6 +18,9 @@ typedef enum {
     TD_DOUBLE_SINGLE_TAP
 } td_state_t;
 
+#define SFTLBRCSPC TD(TD_LSFT_LBRC_SPC)
+#define LT1RBRCENT TD(TD_LT1_RBRC_ENT)
+
 // Create a global instance of the tapdance state type
 static td_state_t td_state;
 
