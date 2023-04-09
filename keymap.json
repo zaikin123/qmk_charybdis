@@ -37,10 +37,10 @@
       "KC_COMM",
       "KC_DOT",
       "KC_SLSH",
-      "LT(3,TD(TD_QUOT_TAB))",
+      "LT(3,KC_QUOT))",
       "KC_LCTL",
-      "RSFT(TD(TD_LBRC_SPC))",
-      "LT(1,TD(TD_RBRC_ENT))"
+      "TD(LSFT_LBRC_SPC)",
+      "TD(LT1_RBRC_ENT)"
     ],
     [
       "KC_EXLM",
