@@ -24,8 +24,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // ...
 };
 
-const uint16_t PROGMEM bspc_combo[] = {KC_LBRC, KC_RBRC, COMBO_BSPC};
-const uint16_t PROGMEM del_combo[] = {KC_QUOT, KC_LCTL, COMBO_DEL;
+const uint16_t PROGMEM bspc_combo[] = {KC_LBRC, KC_RBRC, COMBO_END};
+const uint16_t PROGMEM del_combo[] = {KC_QUOT, KC_LCTL, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(bspc_combo, KC_BSPC),
     COMBO(del_combo, KC_DEL), // keycodes with modifiers are possible too!
