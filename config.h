@@ -1,3 +1,4 @@
+#pragma once
 #undef PRODUCT
 #define PRODUCT "a_dux"
 #undef MATRIX_ROW_PINS
