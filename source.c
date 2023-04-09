@@ -1,6 +1,5 @@
 #include QMK_KEYBOARD_H
-#include "td.h"
-#include "quantum.h"
+
 
 
 
