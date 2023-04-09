@@ -1,7 +1,7 @@
 // Tap Dance keycodes
 enum td_keycodes {
     LSFT_LBRC_SPC,
-    LT1_RBRC_ENT
+    LT1_RBRC_ENT,
     TD_RBRC_ENT,
     TD_LBRC_SPC,
     TD_QUOT_TAB
