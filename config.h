@@ -1,4 +1,6 @@
 #pragma once
+#include "td.h"
+#include "quantum.h"
 #undef PRODUCT
 #define PRODUCT "a_dux"
 #undef MATRIX_ROW_PINS
