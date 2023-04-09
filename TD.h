@@ -1,7 +1,9 @@
+#include "process_tap_dance.h"
+#include "action.h"
 
 // Tap Dance keycodes
 enum td_keycodes {
-    TD_LSFT_LBRC_SPC,
+    TD_LSFT_LBRC_SPC = 0,
     TD_LT1_RBRC_ENT,
     TD_RBRC_ENT,
     TD_LBRC_SPC,
