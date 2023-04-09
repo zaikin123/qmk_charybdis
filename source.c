@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "TD.h"
+#include "quantum.h"
 
 // Tap Dance keycodes
 enum td_keycodes {
