@@ -21,8 +21,6 @@ typedef enum {
 #define SFTLBRCSPC TD(TD_LSFT_LBRC_SPC)
 #define LT1RBRCENT TD(TD_LT1_RBRC_ENT)
 
-/
-
 // Define `ACTION_TAP_DANCE_FN_ADVANCED()` for each tapdance keycode, passing in `finished` and `reset` functions
 tap_dance_action_t tap_dance_actions[] = {
     [TD_LSFT_LBRC_SPC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, sftlbrcspc_finished, sftlbrcspc_reset),
