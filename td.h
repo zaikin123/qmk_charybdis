@@ -18,8 +18,6 @@ typedef enum {
     TD_DOUBLE_SINGLE_TAP
 } td_state_t;
 
-#define SFTLBRCSPC TD(TD_LSFT_LBRC_SPC)
-#define LT1RBRCENT TD(TD_LT1_RBRC_ENT)
 
 // `finished` and `reset` functions for each tapdance keycode
 void sftlbrcspc_finished(tap_dance_state_t *state, void *user_data);
