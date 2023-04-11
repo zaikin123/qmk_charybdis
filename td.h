@@ -1,5 +1,8 @@
+#pragma once
+#include QMK_KEYBOARD_H
 #include "process_tap_dance.h"
 #include "action.h"
+#include "quantum/keycodes.h"
 
 // Tap Dance keycodes
 enum td_keycodes {
