@@ -1,7 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "mralex07.h"
 
-
+__attribute__ ((weak))
 
 // Create a global instance of the tapdance state type
 static td_state_t td_state;
