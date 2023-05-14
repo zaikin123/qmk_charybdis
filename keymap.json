@@ -37,12 +37,12 @@
       "KC_COMM",
       "KC_DOT",
       "KC_SLSH",
-      "KC_A",
-      "MO(1)",
-      "ANY(CAPSWRD)",
+      "KC_LBRC",
+      "LT(1,KC_RBRC)",
+      "KC_ENT",
       "KC_SPC",
-      "MO(2)",
-      "KC_A"
+      "LT(2,KC_QUOT)",
+      "KC_BSPC"
     ],
     [
       "KC_TAB",
