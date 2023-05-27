@@ -12,11 +12,12 @@ jobs:
         file:
         - keymap.json
 # End of json file list
-        keyboard: [dactyl_4x6]
+        keyboard: [sofle]
         conv: [stemcell]
-        split: [left, right]
-    steps:
 
+    steps:
+    - name: Disable git safe directory checks
+      run : git config --global --add safe.directory '*'
     - name: Checkout QMK
       uses: actions/checkout@v3
       with:
@@ -30,22 +31,13 @@ jobs:
         path: users/${{ github.actor }}
         persist-credentials: false
  
-    - name: qmk clean
-      run: qmk clean
-
-    - name: git config
-      run: git config --global --add safe.directory /__w/qmk_keymap_5x6/qmk_keymap_5x6
-      
-    - name: make git-submodule
-      run: make git-submodule
- 
     - name: Setup variables
       env:
         conv_suffix: $([ ${{ matrix.conv }} ] && printf "_${{ matrix.conv }}")
-        split_suffix: $([ ${{ matrix.split }} ] && printf "_${{ matrix.split }}")
+
       run: |
-        echo "build_args=-e CONVERT_TO=${{ matrix.conv }}  -e SPLIT=${{ matrix.split }}" >> $GITHUB_ENV 
-        echo "file_suffix=${{ env.conv_suffix }}${{ env.split_suffix }}" >> $GITHUB_ENV
+        echo "build_args=-e CONVERT_TO=${{ matrix.conv }}" >> $GITHUB_ENV 
+        echo "file_suffix=${{ env.conv_suffix }}" >> $GITHUB_ENV
         echo "archive_name=${{ matrix.keyboard }}${{ env.conv_suffix }}" >> $GITHUB_ENV
   
 
