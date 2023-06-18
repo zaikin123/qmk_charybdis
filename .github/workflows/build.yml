@@ -36,7 +36,7 @@ jobs:
       run: make git-submodule
 
     - name: Build firmware
-      run: qmk compile -e CONVERT_TO=promicro_rp2040 "users/${{ github.actor }}/${{ matrix.file }}" 
+      run: qmk compile -e CONVERT_TO = elite_pi "users/${{ github.actor }}/${{ matrix.file }}" 
 
     - name: Archive firmware
       uses: actions/upload-artifact@v3
