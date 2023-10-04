@@ -16,27 +16,21 @@ jobs:
         conv: [splinky]
     steps:
 
+    - name: Disable git safe directory checks
+      run : git config --global --add safe.directory '*'
+
     - name: Checkout QMK
       uses: actions/checkout@v3
       with:
         repository: qmk/qmk_firmware
-        ref: develop
-        submodules: true
+        submodules: recursive
 
     - name: Checkout userspace
       uses: actions/checkout@v3
       with:
         path: users/${{ github.actor }}
-        persist-credentials: false
  
-    - name: qmk clean
-      run: qmk clean
 
-    - name: git config
-      run: git config --global --add safe.directory /__w/qmk_keymap_5x6/qmk_keymap_5x6
-      
-    - name: make git-submodule
-      run: make git-submodule
  
     - name: Setup variables
       env:
@@ -46,9 +40,9 @@ jobs:
         echo "file_suffix=${{ env.conv_suffix }}" >> $GITHUB_ENV
         echo "archive_name=${{ matrix.keyboard }}${{ env.conv_suffix }}" >> $GITHUB_ENV
   
+
     - name: Build firmware
-      working-directory: users/${{ github.actor }}
-      run: qmk -v compile -j 3 ${{ matrix.file }}
+      run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
 
     - name: Rename uf2
       if: ${{ matrix.conv != '' }}
