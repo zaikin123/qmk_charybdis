@@ -9,7 +9,5 @@
 #define MATRIX_COL_PINS \
     { GP27, GP28, GP21, GP6, GP7 }
 
-
-
 #define BOOTMAGIC_LITE_ROW 5
 #define BOOTMAGIC_LITE_COLUMN 0
