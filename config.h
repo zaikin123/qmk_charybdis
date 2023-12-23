@@ -7,7 +7,7 @@
     { GP29, GP26, GP5, GP4 }
 #undef MATRIX_COL_PINS
 #define MATRIX_COL_PINS \
-    { GP28, GP21, GP6, GP7, GP8 }
+    { GP27, GP28, GP21, GP6, GP7 }
 
        
 
