@@ -1,15 +1,7 @@
 SRC += source.c
-# MCU name
-# MCU = STM32F411
-# BOARD = STEMCELL
-
-# Bootloader selection
-BOOTLOADER = tinyuf2
-CONVERT_TO = stemcell
-
-
-
-
+# RP2040-specific options
+ALLOW_WARNINGS = yes
+PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
 # Build Options
 #   change yes to no to disable
 #
