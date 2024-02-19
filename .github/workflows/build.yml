@@ -13,7 +13,7 @@ jobs:
         - keymap.json
 # End of json file list
         keyboard: [samoklava]
-        conv: [stemcell]
+        conv: [promicro_rp2040] 
         split: [left, right]
     steps:
 
