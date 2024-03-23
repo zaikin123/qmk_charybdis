@@ -9,8 +9,8 @@
 
 /* Handedness. */
 #define MASTER_LEFT
-#define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT_POLL 10
+//#define SPLIT_USB_DETECT
+//#define SPLIT_USB_TIMEOUT_POLL 10
 
 /* VBUS detection. 
 #define USB_VBUS_PIN GP19 */
