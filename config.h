@@ -9,8 +9,6 @@
 #define MATRIX_COL_PINS \
     { GP27, GP28, GP21, GP6, GP7 }
 
-       
-
 /* VBUS detection. */
 #define USB_VBUS_PIN GP19
 
